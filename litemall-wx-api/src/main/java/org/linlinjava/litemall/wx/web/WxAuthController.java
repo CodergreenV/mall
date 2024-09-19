@@ -100,7 +100,7 @@ public class WxAuthController {
         userInfo.setNickName(username);
         userInfo.setAvatarUrl(user.getAvatar());
 
-        // token jwtToken
+        // token
         String token = UserTokenManager.generateToken(user.getId());
 
         Map<Object, Object> result = new HashMap<Object, Object>();
